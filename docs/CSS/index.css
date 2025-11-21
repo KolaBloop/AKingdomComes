@@ -1,0 +1,327 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+::selection {
+    background: rgb(189, 180, 157);
+}
+
+a {
+    text-decoration: none;
+}
+
+b {
+    color: rgb(240, 201, 129);
+    text-shadow: black 0 0 1.5px;
+}
+
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    /*scroll-behavior: smooth;*/
+}
+
+body {
+    background-color: rgb(43, 42, 46);
+    font-family: 'Rubik', sans-serif;
+    padding: 20px;
+    padding-bottom: 300px;
+}
+
+.background-image {
+    /*filter: blur(.1vw);*/
+    background-image: url('../IMG/WALL/hytale-wall-0.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: fixed; /* Fixe l'élément à la fenêtre, de sorte qu'il reste en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place l'élément en arrière-plan */
+}
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0); /* Couleur sombre semi-transparente */
+}
+
+.scrollbar {
+    position: fixed; /* Fixe la scrollbar à droite de l'écran */
+    top: 0;
+    right: 0;
+    width: 20px; /* Largeur de la scrollbar */
+    height: 100%; /* Prend toute la hauteur de l'écran */
+    background-color: rgba(0, 0, 0, 0.2); /* Couleur de fond de la scrollbar */
+    backdrop-filter: blur(1.5px); /* Ajoute un effet de flou */
+    z-index: 100; /* Place la scrollbar au-dessus des autres éléments */
+}
+
+.scrollbar-thumb {
+    width: 100%; /* Prend toute la largeur de la scrollbar */
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur de la barre de défilement */
+    border-radius: 3px; /* Coins arrondis */
+    position: relative;;
+}
+
+.scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Couleur au survol */
+}
+
+.header-container {
+    margin: 0 auto; /* Centrer horizontalement */
+    margin-top: 60px;
+    padding: 10px;
+    max-width: 800px; /* Limite la largeur totale */
+    display: flex; /* Active le mode flexbox */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+}
+
+.wiki-logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.37) 0px 2px 4px 0px, rgba(255, 255, 255, 0.11) 0px 2px 16px 0px;
+    user-select: none;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: center; /* Centre verticalement */
+    margin-left: 15px; /* Ajoute un espace entre le logo et le texte */
+}
+
+.wiki-title {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: rgba(255, 255, 255, 0.35) 0 0 10px;
+}
+
+.wiki-subtitle {
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    text-shadow: rgba(255, 255, 255, 0.35) 0 0 10px;
+}
+
+/* Wiki */
+#wiki-container {
+    margin: 0 auto; /* Centrer horizontalement */
+    padding: 15px;
+    font-family: Montserrat, sans-serif;
+    background-color: rgba(0, 0, 0, 0.45);
+    max-width: 800px; /* Limite la largeur totale */
+    border-radius: 3px; /* Ajoute des coins arrondis */
+    box-shadow: rgba(0, 0, 0, 0.37) 0px 2px 4px 0px, rgba(255, 255, 255, 0.11) 0px 2px 16px 0px;
+    backdrop-filter: blur(1.5px); /* Ajoute un effet de flou */
+}
+
+.wiki-contents {
+    padding: 20px; /* Ajoute une marge intérieure */
+    background-color: rgb(221, 229, 235);
+    border-radius: 3px; /* Ajoute des coins arrondis */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.32) 0px 2px 16px 0px;
+}
+
+.page-title {
+    color: black;
+    font-size: 30px; /* Taille de la police du titre */
+    font-weight: bold;
+    margin-bottom: 25px; /* Espace en bas du titre */
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 2px;
+    text-decoration: underline dashed 5px; /* Soulignement du titre */
+    text-underline-offset: 10px; /* Décalage du soulignement */
+}
+
+.section {
+    background-color: rgba(61, 55, 78, 0.25);
+    border-radius: 3px; /* Ajoute des coins arrondis */
+}
+
+.section-title {
+    background-color: rgb(194, 162, 103);
+    color: white;
+    padding: 5px 10px; /* Ajoute un padding interne pour le titre */
+    font-size: 20px; /* Taille de la police du titre */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.section-content {
+    padding: 10px;
+    font-size: 14px;
+    text-shadow: none;
+}   
+
+.sub-section-text {
+    background-color: rgba(61, 55, 78, 0.25);
+    border-radius: 3px; /* Ajoute des coins arrondis */
+    padding: 5px; /* Ajoute un padding interne pour le texte */
+}
+
+.wiki-pages {
+    display: flex; /* Active le mode Flexbox */
+    justify-content: flex-start; /* Aligne les boutons à gauche */
+    gap: 10px; /* Ajoute un espace entre les boutons */
+}
+
+.wiki-button {
+    height: 100px; /* Hauteur du bouton */
+    width: 150px; /* Largeur du bouton */
+    font-size: 20px; /* Taille du texte */
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    border-radius: 3px;
+    text-decoration: none black 0;
+    transition: all 0.2s ease; /* Transition fluide pour les changements */
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    text-align: center; /* Assure que le texte est centré */
+}
+
+.wiki-button:hover {
+    background-color: rgb(240, 201, 129);
+    color: black;
+    transition: all 0.2s ease; /* Animation de l'épaisseur */
+    text-decoration: underline black 3px; /* Ajoute le soulignement */
+    text-underline-offset: 3px; /* Décalage du soulignement */
+}
+
+.wiki-button:active {
+    background-color: rgb(194, 162, 103);
+}
+
+ul.breadcrumb {
+  margin: 0 auto; /* Centrer horizontalement */
+  padding: 10px;
+  padding-left: 20px;
+  max-width: 800px; /* Limite la largeur totale */
+  display: flex; /* Active le mode flexbox */
+  align-items: center; /* Aligne les éléments verticalement au centre */
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  color: rgba(245, 248, 250, 0.8);
+  content: "\00a0/\00a0";
+}
+ul.breadcrumb li {
+  color: rgba(245, 248, 250, 0.8);
+  font-weight: bold;
+}
+ul.breadcrumb li a {
+  color: rgb(240, 201, 129);
+  text-decoration: none;
+  font-weight: bold;
+}
+ul.breadcrumb li a:hover {
+  text-decoration: underline 2px;
+  text-underline-offset: 3px;
+}
+
+.toc {
+    background-color: rgba(245, 248, 250, 0.8);
+    border-radius: 3px; /* Ajoute des coins arrondis */
+    width: fit-content;
+    border: 1px solid rgba(95, 95, 95, 0.4) ;
+}
+.toc-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 15px;
+    border-bottom: 1px solid rgba(95, 95, 95, 0.4) ;
+}
+.toc-list {
+    list-style-type: none; /* Supprime les puces par défaut */
+    padding: 10px;
+    counter-reset: toc-counter;
+}
+.toclevel-1 {
+    counter-increment: toc-counter;
+}
+.toclevel-1 a::before {
+    content: counter(toc-counter) ". ";
+    margin-right: 2px;
+    margin-left: 5px;
+}
+.toclevel-1 a {
+    display: block;
+    padding: 5px;
+    color: rgb(42, 42, 42);
+    border-radius: 3px;
+    text-decoration: none;
+}
+.toclevel-1 a:hover {
+    background-color: black;
+    color: white;
+}
+
+.separator {
+    height: 5px;
+    background-color: rgb(42, 42, 42);
+    border-radius: 3px;
+    margin: 20px 0;
+}
+
+.link {
+    color: rgb(240, 201, 129); /* Couleur du lien */
+    text-decoration: underline dotted 2px; /* Pas de soulignement par défaut */
+    text-underline-offset: 3px; /* Décalage du soulignement */
+    font-weight: bold; /* Met le texte en gras */
+    text-shadow: black 0 0 1.5px;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline 2px; /* Soulignement solide au survol */
+}
+
+jump {
+    display: block; /* Assure que la balise se comporte comme un conteneur */
+    height: 15px; /* Espace */
+}
+
+.text-list {
+    margin-left: 20px;
+}
+
+.icon {
+    width: 40px; /* Largeur de l'icône */
+    height: 40px; /* Hauteur de l'icône */
+    background-size: cover; /* Ajuste la taille de l'image de fond */
+}
+
+.moustache {
+    background-image: url('../IMG/ICON/moustache.svg');
+}
+
+.devil {
+    background-image: url('../IMG/ICON/devil-moustache.svg');
+}
+
+.happy {
+    background-image: url('../IMG/ICON/happy-moustache.svg');
+}
+
+.content {
+    background-image: url('../IMG/ICON/content-moustache.svg');
+}
+
+.alert {
+    background-image: url('../IMG/ICON/alert.svg');
+}

@@ -1,0 +1,432 @@
+{
+  "sections": [
+    {
+      "id": "Principaux",
+      "title": "Principaux",
+      "buildings": [
+        {
+          "name": "Hôtel de ville",
+          "description": "Bâtiments Principal",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Maisons / Habitations",
+          "description": "Logements",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Hangar de bâtisseurs",
+          "description": "Bâtiment pour les bâtisseurs/ouvriers/constructeurs/maçons",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Entrepôts",
+          "description": "Dépôt collectif pour entreposer et stocker des objets",
+          "image": "IMG/Buildings/"
+        }
+      ]
+    },
+    {
+      "id": "Nourritures",
+      "title": "Nourritures",
+      "buildings": [
+        {
+          "name": "Fermes",
+          "description": "Agricultures, Champs, Élevages de bétails, Moulin, Silo/Grange, Verger : Produits de ferme. étables",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Cabane de pêcheur",
+          "description": "Pêche, Poissonnerie",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Abattoir",
+          "description": "Lieu de production de viandes à partir de bétails",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Restaurant",
+          "description": "Lieu de restauration",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Boucherie",
+          "description": "Vente de viande (Boucher, Charcutier)",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Poissonnerie",
+          "description": "Vente de nourriture marine",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Rucherie / Ferme apicole",
+          "description": "Ferme spécialisée dans l’élevage d’abeilles pour la production de miel et de cire",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Vignoble",
+          "description": "Lieu de culture de la vigne, vin, raisins",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Brasserie",
+          "description": "Production de bières",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Distillerie",
+          "description": "Fabrique des boissons alcoolisées à partir de fruits ou de céréales, comme du cidre ou de l’hydromel, pour le commerce ou les tavernes.",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Boulangerie",
+          "description": "Lieu de production et vente de pains, pâtisseries et gâteaux.",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Laiterie / Fromagerie",
+          "description": "Production de produits laitiers comme le fromage ou le beurre à partir du lait des vaches ou chèvres.",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Marché aux fruits et légumes",
+          "description": "Étal spécialisé dans la vente de fruits et légumes.",
+          "image": "IMG/Buildings/"
+        }
+      ]
+    },
+    {
+      "id": "Secondaires",
+      "title": "Secondaires",
+      "buildings": [
+        {
+          "name": "Cabane de bûcheron",
+          "description": "Récolte de bois à partir d’arbres",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Scierie / Menuiserie",
+          "description": "Transformation du bois en objets ou autres",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Mine / Carrière",
+          "description": "Extraction de ressources minières",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Marché / Centre commercial",
+          "description": "Commerce, Magasin",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Hôpital",
+          "description": "Soins des Habitants",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "École",
+          "description": "Éducation des enfants et adolescents",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Prison",
+          "description": "Lieu de détention des criminels et prisonniers",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Transporteur / Coursier",
+          "description": "Acheminement d’objets",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Banque",
+          "description": "Service de dépôt et retrait d’argents",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Cimetière / Nécropole",
+          "description": "Terrain destiné aux sépultures",
+          "image": "IMG/Buildings/"
+        }
+      ]
+    },
+    {
+      "id": "Défenses",
+      "title": "Défenses",
+      "buildings": [
+        {
+          "name": "Caserne",
+          "description": "Bâtiment d’entraînement et de repos pour les gardes. Stocke les armes et armures",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Tour de garde",
+          "description": "Tours avec archers ou garde à distance",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Murailles",
+          "description": "Murs de protection",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Porte fortifié (Herse)",
+          "description": "Grille coulissante en fer",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Police",
+          "description": "Lieu de sécurité, de protection, et maintenir de l’ordre",
+          "image": "IMG/Buildings/"
+        }
+      ]
+    },
+    {
+      "id": "Tourismes",
+      "title": "Tourismes",
+      "buildings": [
+        {
+          "name": "Port / Quai",
+          "description": "Commerce, Tourisme, Transport. Attire les voyageurs",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Auberge",
+          "description": "Lieu de repos, de restauration et d’obtention de quêtes. Attire les voyageurs",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Taverne / Bar",
+          "description": "Lieu de restauration et d’obtention de quêtes. Attire les voyageurs",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Hôtel",
+          "description": "Lieu d’hébergement pour voyageurs",
+          "image": "IMG/Buildings/"
+        }
+      ]
+    },
+    {
+      "id": "Autres",
+      "title": "Autres",
+      "buildings": [
+        {
+          "name": "Église / Temple",
+          "description": "Lieu spirituel (peut raviver les morts)",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Toilettes publiques",
+          "description": "Sanitaires accessibles à tous",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Poterie",
+          "description": "Atelier de fabrication et vente d’objets en argile ou en céramique",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Tannerie",
+          "description": "Atelier de traitement de peau en cuir",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Atelier d’artisan",
+          "description": "Fabrication d’objets à partir de matière première",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Forge",
+          "description": "Artisanat métallurgique / Équiper les soldats et gardes / Fabrication d'outils",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Herboriste / Botaniste",
+          "description": "Production et Boutique de remèdes à base de plantes médicinales",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Facteur / Poste",
+          "description": "Service postal et distribution (Lettres,Colis,Courriers)",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Déchetterie / Recyclage",
+          "description": "Lieu de dépôt et traitement des déchets",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Orphelinat",
+          "description": "Lieu d’accueil pour enfants sans famille",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Observatoire",
+          "description": "Lieu d’étude du ciel et des étoiles, trouver de nouvelles planètes",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Comptoir commercial",
+          "description": "Base pour préparer des expéditions de caravanes marchande",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Tailleur / Couturier",
+          "description": "Lieu de vente d’habits, tenues et accessoires (parapluies)",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Cabane de chasse",
+          "description": "Poste de chasse et stockage du gibier",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Chantier naval",
+          "description": "Construction et réparation de bateaux pour la pêche, le commerce ou l’exploration.",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Laboratoire",
+          "description": "Atelier de décomposition et transformation d’éléments",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Alchimiste",
+          "description": "Atelier de fabrication de potions, explosifs ou objets magiques à partir d’ingrédients rares.",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Verrerie",
+          "description": "Fabrique des vitres, bouteilles et objets décoratifs en verre à partir de sable chauffé.",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Teinturerie",
+          "description": "Produit des teintures à partir de plantes ou de minerais pour personnaliser les vêtements, armures ou bannières.",
+          "image": "IMG/Buildings/"
+        }
+      ]
+    },
+    {
+      "id": "Divertissements",
+      "title": "Divertissements / Loisirs",
+      "buildings": [
+        {
+          "name": "Bibliothèque",
+          "description": "Rassemblement et d’entreposage d’ouvrages",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Jardin / Parc",
+          "description": "Espace communautaire naturelle",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Musées",
+          "description": "Espace d’exposition d'objets de collections",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Colisée / Amphithéâtre",
+          "description": "Arène de combats spectaculaires et de paries",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Casino",
+          "description": "Lieu de gambling pour gagner de l’argent ou des lots",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Théâtre",
+          "description": "Salle dédiée aux arts scéniques",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Cinéma",
+          "description": "Salle de projection et de récits visuels",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Zoo",
+          "description": "Lieu d’observation des espèces",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Plage",
+          "description": "Littoral pour se détendre et se baigner",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Piscine / Parc aquatique",
+          "description": "Lieu de baignade et de loisirs aquatiques",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Onsen / Bains thermaux / Sauna",
+          "description": "Sources chaudes pour relaxation",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Discothèque / Club",
+          "description": "Lieu de danse et de musique nocturne",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Camping / Resort",
+          "description": "Zone équipée pour les voyageurs souhaitant séjourner en tente ou à la belle étoile.",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Salle d’arcade",
+          "description": "Lieu de jeux vidéo et bornes d’arcade",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Piste de course",
+          "description": "Circuit pour des courses de chevaux, de chariots ou même de joueurs.",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Fête foraine / Parc d’attraction",
+          "description": "Zone avec des stands de jeux, des manèges ou des attractions pour divertir les habitants.",
+          "image": "IMG/Buildings/"
+        }
+      ]
+    },
+    {
+      "id": "Animaux",
+      "title": "Animaux",
+      "buildings": [
+        {
+          "name": "Animalerie",
+          "description": "Lieu d'élevage, de dressage et d'adoption d’animaux",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Pension / Garderie / Nurserie Animalier",
+          "description": "Lieu où l’on peut laisser ses animaux",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Écurie",
+          "description": "Élevage de chevaux de combat destiné aux soldats/gardes",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Clinique vétérinaire",
+          "description": "Soins médicaux pour animaux",
+          "image": "IMG/Buildings/"
+        },
+        {
+          "name": "Parc animalier / Réserve naturelle / Zoo",
+          "description": "Espace protégé pour la conservation de la faune",
+          "image": "IMG/Buildings/"
+        }
+      ]
+    }
+  ]
+}

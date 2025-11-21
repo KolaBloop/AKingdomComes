@@ -1,0 +1,26 @@
+.scrollbar {
+    position: fixed; /* Fixe la scrollbar à droite de l'écran */
+    top: 0;
+    right: 0;
+    width: 20px; /* Largeur de la scrollbar */
+    height: 100%; /* Prend toute la hauteur de l'écran */
+    background-color: rgba(0, 0, 0, 0.2); /* Couleur de fond de la scrollbar */
+    backdrop-filter: blur(1.5px); /* Ajoute un effet de flou */
+    z-index: 100; /* Place la scrollbar au-dessus des autres éléments */
+}
+
+.scrollbar-thumb {
+    width: 100%; /* Prend toute la largeur de la scrollbar */
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur de la barre de défilement */
+    border-radius: 3px; /* Coins arrondis */
+    position: relative;;
+    cursor: grab;
+}
+
+.scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Couleur au survol */
+}
+
+.scrollbar-thumb:active {
+    cursor: grabbing; /* Change le curseur au clic */
+}

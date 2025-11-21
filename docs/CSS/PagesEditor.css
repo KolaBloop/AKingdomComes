@@ -1,0 +1,329 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Courier New');
+
+::selection {
+    background: rgb(189, 180, 157);
+}
+
+a {
+    text-decoration: none;
+}
+
+b {
+    color: rgb(240, 200, 130);
+    text-shadow: black 0 0 1.5px;
+}
+
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+body {
+    background-color: rgb(225, 233, 233);
+    font-family: Rubik, sans-serif;
+    padding: 20px;
+    padding-bottom: 300px;
+    padding-top: 100px;
+}
+
+/* Layout de l'editor entier */
+.editor-layout {
+    display: flex; /* Active le mode Flexbox */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    gap: 20px; /* Ajoute un espace entre les éléments */
+    max-width: 1200px; /* Limite la largeur totale */
+    margin: 0 auto; /* Centre horizontalement */
+}
+
+/* Navigateur de pages */
+
+.pages-nav-container {
+    position: sticky; /* Rend l'élément collant */
+    font-family: Courier New;
+    top: 100px; /* Distance par rapport au haut de son conteneur parent */
+    width: 220px; /* Largeur fixe */
+    height: auto; /* Ajuste la hauteur au contenu */
+    flex-shrink: 0; 
+    background-color: rgb(223, 229, 234);
+    border-radius: 9px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    z-index: 100; /* Assure que l'élément reste au-dessus des autres */
+}
+
+.pages-nav-title {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px; /* Taille de la police du titre */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espace en bas du titre */
+    text-align: center;
+
+}
+
+.new-page-button {
+    background-color: rgb(223, 229, 234);
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px; /* Taille de la police */
+    border: rgba(0, 0, 0, 0.6) 2px dashed; /* Bordure noire */
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    border-radius: 50px; /* Ajoute des coins arrondis */
+    text-decoration: none;
+    height: 35px;
+    width: 100%; /* Largeur du bouton */
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+    transition: all 0.2s ease; /* Transition fluide pour les changements */
+}
+
+.new-page-button:hover {
+    color: black;
+    border: rgb(0, 0, 0) 2px dashed;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease; /* Animation de l'épaisseur */
+}
+
+.new-page-button:active {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.page-nav-button {
+    background-color: rgb(223, 229, 234);
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px; /* Taille de la police */
+    border: none; /* Bordure noire */
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Courier New;
+    border-radius: 50px; /* Ajoute des coins arrondis */
+    text-decoration: none;
+    height: 30px;
+    width: 100%; /* Largeur du bouton */
+    margin-top: none; /* Pas de marge en haut */
+    text-align: left;
+    padding-left: 12px; /* Ajoute un padding interne pour le texte */
+    white-space: nowrap; /* Empêche le texte de se déformer */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.page-nav-button:hover {
+    color: black;
+    background-color: rgb(190, 197, 202);
+}
+
+.page-nav-button:active {
+    background-color: rgb(174, 180, 184);
+}
+
+.subpage-nav {
+    margin-left: 30px; /* Décalage à gauche pour les sous-pages */
+}
+
+
+.page-nav-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.page-nav-row.dragging {
+    opacity: 0.5;
+}
+
+.page-nav-row.drag-over {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.tree-line {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+    text-align: center;
+    user-select: none;    
+    width: 1em;
+    margin-left: -10px;
+}
+
+.chevron {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    width: 1em;
+    transition: transform 0.2s;
+}
+
+.page-drop-indicator {
+    height: 4px;
+    background: black;
+    margin: 0 0 0 20px;
+    border-radius: 2px;
+    width: calc(100% - 20px);
+    position: relative;
+    z-index: 10;
+    display: none;
+}
+.page-drop-indicator.active {
+    display: block;
+}
+
+
+/* Canvas */
+.canvas-container {
+
+    padding: 15px;
+    font-family: Montserrat, sans-serif;
+    background-color: rgba(0, 0, 0, 0.2);
+    max-width: 800px; /* Limite la largeur totale */
+    border-radius: 3px; /* Ajoute des coins arrondis */
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1.5px); /* Ajoute un effet de flou */
+}
+
+.canvas {
+    padding: 20px; /* Ajoute une marge intérieure */
+    background-color: rgb(223, 229, 234);
+    border-radius: 3px; /* Ajoute des coins arrondis */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.page-title {
+    color: black;
+    font-size: 30px; /* Taille de la police du titre */
+    font-weight: bold;
+    margin-bottom: 25px; /* Espace en bas du titre */
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 2px;
+    text-decoration: underline dashed 5px; /* Soulignement du titre */
+    text-underline-offset: 10px; /* Décalage du soulignement */
+}
+
+.section {
+    background-color: rgba(61, 55, 78, 0.25);
+    border-radius: 3px; /* Ajoute des coins arrondis */
+}
+
+.section-title {
+    background-color: rgb(194, 162, 103);
+    color: white;
+    padding: 5px 10px; /* Ajoute un padding interne pour le titre */
+    font-size: 20px; /* Taille de la police du titre */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.section-content {
+    padding: 10px;
+    font-size: 14px;
+    text-shadow: none;
+}   
+
+.sub-section-text {
+    background-color: rgba(61, 55, 78, 0.25);
+    border-radius: 3px; /* Ajoute des coins arrondis */
+    padding: 5px; /* Ajoute un padding interne pour le texte */
+}
+
+.wiki-pages {
+    display: flex; /* Active le mode Flexbox */
+    justify-content: flex-start; /* Aligne les boutons à gauche */
+    gap: 10px; /* Ajoute un espace entre les boutons */
+}
+
+.wiki-button {
+    height: 100px; /* Hauteur du bouton */
+    width: 150px; /* Largeur du bouton */
+    font-size: 20px; /* Taille du texte */
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    border-radius: 3px;
+    text-decoration: none black 0;
+    transition: all 0.2s ease; /* Transition fluide pour les changements */
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    text-align: center; /* Assure que le texte est centré */
+}
+
+.wiki-button:hover {
+    background-color: rgb(240, 201, 129);
+    color: black;
+    transition: all 0.2s ease; /* Animation de l'épaisseur */
+    text-decoration: underline black 3px; /* Ajoute le soulignement */
+    text-underline-offset: 3px; /* Décalage du soulignement */
+}
+
+.wiki-button:active {
+    background-color: rgb(194, 162, 103);
+}
+
+.separator {
+    height: 5px;
+    background-color: rgb(42, 42, 42);
+    border-radius: 3px;
+    margin: 20px 0;
+}
+
+.link {
+    color: rgb(240, 201, 129); /* Couleur du lien */
+    text-decoration: underline dotted 2px; /* Pas de soulignement par défaut */
+    text-underline-offset: 3px; /* Décalage du soulignement */
+    font-weight: bold; /* Met le texte en gras */
+    text-shadow: black 0 0 1.5px;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline 2px; /* Soulignement solide au survol */
+}
+
+jump {
+    display: block; /* Assure que la balise se comporte comme un conteneur */
+    height: 15px; /* Espace au-dessus */
+}
+
+.text-list {
+    margin-left: 20px;
+}
+
+.scrollbar {
+    position: fixed; /* Fixe la scrollbar à droite de l'écran */
+    top: 0;
+    right: 0;
+    width: 20px; /* Largeur de la scrollbar */
+    height: 100%; /* Prend toute la hauteur de l'écran */
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond de la scrollbar */
+    backdrop-filter: blur(1.5px); /* Ajoute un effet de flou */
+    z-index: 100; /* Place la scrollbar au-dessus des autres éléments */
+}
+
+.scrollbar-thumb {
+    width: 100%; /* Prend toute la largeur de la scrollbar */
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur de la barre de défilement */
+    border-radius: 3px; /* Coins arrondis */
+    position: relative;;
+    cursor: grab;
+}
+
+.scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Couleur au survol */
+}
+
+.scrollbar-thumb:active {
+    cursor: grabbing; /* Change le curseur au clic */
+}
+

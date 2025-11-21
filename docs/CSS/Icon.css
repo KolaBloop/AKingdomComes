@@ -1,0 +1,25 @@
+.icon {
+    width: 40px; /* Largeur de l'icône */
+    height: 40px; /* Hauteur de l'icône */
+    background-size: cover; /* Ajuste la taille de l'image de fond */
+}
+
+.moustache {
+    background-image: url('../IMG/ICON/moustache.svg');
+}
+
+.devil {
+    background-image: url('../IMG/ICON/devil-moustache.svg');
+}
+
+.happy {
+    background-image: url('../IMG/ICON/happy-moustache.svg');
+}
+
+.content {
+    background-image: url('../IMG/ICON/content-moustache.svg');
+}
+
+.alert {
+    background-image: url('../IMG/ICON/alert.svg');
+}

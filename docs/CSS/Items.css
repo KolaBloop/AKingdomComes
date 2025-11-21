@@ -1,0 +1,128 @@
+.items-section {
+    display: flex;
+    flex-direction: row; /* aligne les sections horizontalement */
+    flex-wrap: wrap;     /* permet de passer à la ligne si l’espace manque */
+    gap: 10px; /* espace entre les sections */
+}
+
+.items-card {
+    display: flex;
+    flex-direction: column; /* image au-dessus, nom en-dessous */
+    align-items: center;    /* centre horizontalement */
+    background-color: rgb(45, 45, 53);
+    border-radius: 3px;
+    border: 3px solid rgba(95, 95, 95, 0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    width: 150px;
+    height: 175px;
+    text-decoration: none; /* Supprime le soulignement du lien */
+    color: white;         /* Couleur du texte */
+}
+
+.items-card:hover {
+    background-color: rgb(57, 57, 67);
+    cursor: pointer;
+    border: 3px solid rgba(140, 140, 140, 0.4);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+}
+
+.items-image {
+    width: 120px;
+    height: 120px;
+    margin-top: -10px;
+}
+
+.items-name {
+    margin-top: -5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.item-panel {
+    display: flex;
+    background-color: rgba(245, 248, 250, 0.8);
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.item-image {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column; /* Titre AU-DESSUS de la description */
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.item-name {
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    display: block; /* important pour que la ligne prenne toute la largeur */
+    padding-bottom: 5px; /* espace entre texte et ligne */
+    border-bottom: 5px dashed black; /* ta ligne pointillée */
+}
+
+.item-description {
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(42, 42, 42);
+}
+
+.item-section {
+    background-color: rgba(245, 248, 250, 0.8);
+}
+
+.item-section-title {
+    color: rgb(0, 0, 0);
+    margin: 10px 10px 0 10px;
+    padding: 5px;
+    font-size: 20px; /* Taille de la police du titre */
+    border-bottom: 3px solid black;
+    text-transform: uppercase;
+}
+
+.item-crafting-content{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap; /* (facultatif) permet de passer à la ligne si trop d’items */
+    gap: 10px; /* espace entre les items */
+}
+
+.needed-items {
+    display: flex;              /* met l’image et le texte sur la même ligne */
+    align-items: center;        /* centre verticalement */
+    background-color: rgba(49, 60, 79, 0.2);
+    width: fit-content;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.needed-item-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.needed-item-info {
+    display: flex;
+    flex-direction: column; /* quantité au-dessus, nom en-dessous */
+    justify-content: center; /* centre verticalement dans son propre bloc */
+}
+
+.needed-item-quantity {
+    font-size: 25px;
+}
