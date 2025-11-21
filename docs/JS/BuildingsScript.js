@@ -1,5 +1,5 @@
 // === Chargement du JSON ===
-fetch("JSON/buildings.json")
+fetch("JSON/Buildings.json")
     .then(response => response.json())
     .then(data => generateBuildings(data))
     .catch(err => console.error("Erreur JSON:", err));
